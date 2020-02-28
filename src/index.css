@@ -5,18 +5,19 @@ body {
   font-family: 'Montserrat';
   background: #dddddd;
   text-align: center;
-  text-align: center;
 }
 
 #app {
-  height: 100vh;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.sorting-container {
+.sort-container {
+  margin: 3em 0;
+}
+.sort {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -27,9 +28,11 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: normal;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-button {
+#restart {
   font-family: 'Montserrat';
   touch-action: manipulation;
   background: #bbbbbb;
@@ -38,16 +41,42 @@ button {
   padding: 0.5em 1em;
   margin: 1em;
   border-radius: 3px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-button:focus,
-button:active {
+#restart:focus,
+#restart:active {
   outline: 0;
 }
 
 #speed {
-  width: 150px;
+  -webkit-appearance: none;
+  width: 125px;
+  height: 3px;
+  border-radius: 5px;
+  background: #bbbbbb;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#speed::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1b5e20;
+  cursor: pointer;
+}
+
+#speed::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1b5e20;
+  cursor: pointer;
 }
