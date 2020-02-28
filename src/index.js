@@ -1,6 +1,6 @@
 const DEFAULT_ANIMATION_SPEED = 50;
 const MAX_ANIMATION_SPEED = 100;
-const NUM_NODES = 100;
+const NUM_NODES = 50;
 const COLORS = {
   GREEN: '#1b5e20',
   RED: '#b71c1c',
@@ -100,7 +100,7 @@ const selectionSort = async arr => {
     swapNodes(nodes[i], nodes[minIdx]);
     color([nodes[i]], COLORS.GREEN);
   }
-  color(nodes[[arr.length - 1]], COLORS.GREEN);
+  color([nodes[arr.length - 1]], COLORS.GREEN);
 };
 
 /**
