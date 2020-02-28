@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  background: #dddddd;
+  text-align: center;
+  text-align: center;
+}
+
+#app {
+  height: 100vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+button {
+  font-family: 'Montserrat';
+  touch-action: manipulation;
+  background: #bbbbbb;
+  border: 0;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 1em;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:focus,
+button:active {
+  outline: 0;
+}
+
+#speed {
+  width: 150px;
+}
